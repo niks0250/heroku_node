@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div(class = "in_out")
+    form(action="/insert",method="post")
+      input(type="text",name="title",id="title")
+      input(type="text",name="content",id="content")
+      input(type="text",name="author",id="author")
+      button(type="submit") submit
+
+    a(href = "/get-data") LOAD DATA 
+    ul   
+      if items 
+        each val in items
+          li 
+            ul 
+              li= val.title
+              li= val.content 
+              li= val.author
+              li= val._id
+
+  div(class="upd_del")
+    form(action="/update",method="post")
+      input(type="text",name="title",id="title")
+      input(type="text",name="content",id="content")
+      input(type="text",name="author",id="author")
+      input(type="text",name="id",id="id",placeholder="id")
+      button(type="submit") Submit to your overlords
+    a(href='/delete_all') Annihilate
+    

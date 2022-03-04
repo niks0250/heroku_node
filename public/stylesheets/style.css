@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+a {
+  color: #00B7FF;
+  margin:auto;
+}
+
+ul
+{
+  margin:auto;
+}
+
+form
+{
+  margin: auto;
+}
+
+.in_out
+{
+  display: flex;
+}
+.upd_del
+{
+  display: flex;
+}
